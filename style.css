@@ -1,69 +1,132 @@
-
-.container {
-    background-color: #005ACD;
-    display: flex;
-    width: 100vw;
-    height: 100vh;  
-  }
-
-  
-  .img-logo {
-    flex: 2;
-    background-size: cover;
-    background-position: center;
-    background-image: url(Images/Logo.jpg);
-  }
-  
-  .form-container {
-    flex: 1;
-    padding: 20px;
-    background-color: #005ACD; 
-    align-self: center;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white; 
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  form {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #005ACD; 
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex; /* Makes body behave as flex container */
+  justify-content: flex-end; /* Aligns image container to top right */
+  align-items: flex-start; /* Aligns image container to top */
 }
 
-  label {
-    font-weight: bold;
-    color: white; 
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff; 
-  }
-  
-  button {
-    background-color: darkblue;  
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0d6efd; 
-  }
+.container {
+  background-color: #005ACD;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
 
- 
+.image-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  /* Increase container width to create more space */
+  width: 450px;  /* Adjust width as needed */
+  margin: 50px 55px;  /* Adjust values for horizontal and vertical space */
+}
+
+.image-container img {
+  flex: 0 0 auto; /* Prevents images from shrinking below content size */
+  margin: -20px; /* Adjust margin between images (optional) */
+  width: 100px; /* Adjust image width */
+  height: 100px; /* Adjust image height */
+}
+
+.text-overlay {
+  position: absolute;  /* Overlaps the images */
+  top: 50%;  /* Positions vertically in the middle */
+  left: 50%;  /* Positions horizontally in the middle */
+  transform: translate(-50%, -50%); /* Adjusts positioning for different text sizes */
+  color: white;  /* Example text color (adjust for contrast with image) */
+  font-size: 50px;  /* Adjust font size */
+  text-align: center;  /* Centers text horizontally */
+}
+
+.img-logo {
+  flex: 2;
+  background-size: cover;
+  background-position: center;
+  background-image: url(Images/Logo.jpg);
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #005ACD;
+  align-self: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #005ACD;
+  justify-content: center; /* Centers elements vertically within the form */
+
+}
+
+
+label {
+  font-weight: bold;
+  color: white;
+  /* Add margin-right for spacing */
+  margin-right: 10px; 
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  background-color: #fff;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 30px; 
+}
+
+input[type="password"] {
+  width: 174px;
+}
+
+.textbox-container {
+  display: flex;
+  align-items: center; /* Aligns label and textbox vertically */
+  margin-bottom: 10px; /* Add spacing between containers */
+  margin-left: 50px;
+}
+
+
+
+.textbox-icon {
+  margin-right: 10px; /* Space between image and textbox */
+  width: 50px; /* Adjust image width as needed */
+  height: 50px; /* Adjust image height as needed */
+}
+
+button {
+  margin: 0 auto;
+  background-color: darkblue;
+  color: white;
+  padding: 10px 20px; /* Adjust padding if needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px;  /* Set a specific width */
+  max-width: 80%; /* Maximum width as a percentage */
+  justify-content: center; /* Centers elements vertically within the form */
+}
+
+button:hover {
+  background-color: #0d6efd;
+}
+

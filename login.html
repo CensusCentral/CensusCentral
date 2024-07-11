@@ -4,21 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Form</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
   <div class="container">
-    <div class="img-logo"></div>
-    <div class="form-container">
-      <h1>Login</h1>    
-      <form action="#">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+    <div class="img-logo"></div> <div class="form-container">
+      <h1>Login</h1>
+      <form action="/login" method="post"> 
+        <div class="textbox-container">
+          <img src="Images/1.jpg" alt="Username Icon" class="textbox-icon">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="textbox-container">
+          <img src="Images/1.jpg" alt="Password Icon" class="textbox-icon">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
         <button type="submit">Login</button>
       </form>
     </div>
-  </div>
+    <div class="image-container">
+      <img src="Images/1.jpg" alt="Image 1">
+      <span class="text-overlay">CUDHAO</span>
+      <img src="Images/2.jpg" alt="Image 2">
+    </div>
 </body>
 </html>
