@@ -94,9 +94,9 @@ input[type="password"] {
   padding-left: 30px; 
 }
 
-input[type="password"] {
+/* input[type="password"] {
   width: 174px;
-}
+} */
 
 .textbox-container {
   display: flex;
