@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif; 
+}
+
+.census-form {
+  background-color: #e0f2ff; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  width: 93%; 
+  max-width: 500px; 
+}
+
+.census-form label {
+  display: block;
+  margin-bottom: 5px; 
+  font-weight: bold;
+  color: #333; 
+}
+
+.census-form input,
+.census-form select {
+  width: 100%;
+  padding: 8px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 3px; 
+  box-sizing: border-box;
+}
+
+.census-form .title {
+  font-size: 1.2em; 
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+.classification {
+  display: flex;
+  flex-direction: column; 
+}
+
+.classification label {
+  margin-bottom: 10px; 
+  font-weight: normal; 
+  color: #333; 
+}
+
+.classification div {
+  margin-top: 5px; 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; 
+  font-size: 1.3em; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  padding: 20px;
+  border: none; 
+  border-radius: 4px;
+  background-color: #fff; 
+}
+
+button {
+  margin: 10px auto; 
+  background-color: #007bff; 
+  color: white;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px; 
+  max-width: 80%; 
+  justify-content: center; 
+}
+
+button:hover {
+  background-color: #0d6efd;
+}
