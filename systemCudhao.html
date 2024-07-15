@@ -9,15 +9,15 @@
 </head>
 <body>
   <!-- division for humber logo before the sidebar -->
-    <div class="menu-btn">
+    <!-- <div class="menu-btn">
         <i class="fas fa-bars"></i>
-     </div>
+     </div> -->
     <div class="side-bar">
       <!-- header for logo and close button -->
         <header>
-            <div class="close-btn">
+            <!-- <div class="close-btn">
                 <i class="fas fa-times"></i>
-            </div>
+            </div> -->
             <img src="Images/cudhaoLogo.png" alt="">
             <h1>CUDHAO</h1>
         </header>
@@ -46,15 +46,15 @@
     <script>
          $(document).ready(function(){
     //for expand and collapse the sidebar
-     $('.menu-btn').click(function(){
-      $('.side-bar').addClass('active');
-      $('.menu-btn').css("visibility", "hidden");
-     });
-       //Active cancel button
-     $('.close-btn').click(function(){
-       $('.side-bar').removeClass('active');
-       $('.menu-btn').css("visibility", "visible");
-     });
+    //  $('.menu-btn').click(function(){
+    //   $('.side-bar').addClass('active');
+    //   $('.menu-btn').css("visibility", "hidden");
+    //  });
+    //    //Active cancel button
+    //  $('.close-btn').click(function(){
+    //    $('.side-bar').removeClass('active');
+    //    $('.menu-btn').css("visibility", "visible");
+    //  });
       //for toggle sub menus
      $('.sub-btn').click(function(){
        $(this).next('.sub-menu').slideToggle();

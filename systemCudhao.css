@@ -15,7 +15,7 @@
    .side-bar{
        background: #ffffff;
        width: 250px;
-       left: -350px;/*to go the sidebar at the left side*/
+       /* left: -350px;to go the sidebar at the left side */
        height: 100vh;
        position: fixed;
        top: 0;
@@ -34,14 +34,14 @@
        border-radius: 50%;
    }
    
-   .close-btn{
+   /* .close-btn{
        position: absolute;
        color: #fff;
        font-size: 23px;
        right: 0px;
        margin: 15px;
        cursor: pointer;
-   }
+   } */
    
    header h1{
        text-align: center;
@@ -94,9 +94,9 @@
        margin: 25px;
    }
    
-   .side-bar.active{
+   /* .side-bar.active{
        left: 0;
-   }
+   } */
    
    .side-bar::-webkit-scrollbar{
        width: 0px;/*to have scrollbar at the right side of sidebar*/
