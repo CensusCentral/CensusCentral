@@ -12,20 +12,38 @@
         <form action="#">
             <div class ="houseMemberDetails">
                 <div class="input-box">
-                    <span class = "details">Date</span>
-                    <input type="text" placeholder="Date" required>   
+                    <label for="date" class="details">Date</label>
+                    <select id="date" required>
+                        <option value="" disabled selected>Select Date</option>
+                        <option value="2024-07-01">2024-07-01</option>
+                        <option value="2024-07-02">2024-07-02</option>
+                        <option value="2024-07-03">2024-07-03</option>
+                        <!-- Add more dates as needed -->
+                    </select>
                 </div>
                 <div class="input-box">
-                    <span class = "details">Survey Form No.</span>
-                    <input type="text" placeholder="Enter Form No." required>   
+                    <span class="details">Survey Form No.</span>
+                    <input type="text" placeholder="Enter Form No." required>
                 </div>
                 <div class="input-box">
-                    <span class = "details">Barangay</span>
-                    <input type="text" placeholder="Enter Barangay" required>   
+                    <label for="barangay" class="details">Barangay</label>
+                    <select id="barangay" required>
+                        <option value="" disabled selected>Select Barangay</option>
+                        <option value="Barangay 1">Barangay 1</option>
+                        <option value="Barangay 2">Barangay 2</option>
+                        <option value="Barangay 3">Barangay 3</option>
+                        <!-- Add more barangays as needed -->
+                    </select>
                 </div>
                 <div class="input-box">
-                    <span class = "details">Sitio / Purok</span>
-                    <input type="text" placeholder="Enter Sitio/Purok" required>   
+                    <label for="sitio_purok" class="details">Sitio / Purok</label>
+                    <select id="sitio_purok" required>
+                        <option value="" disabled selected>Select Sitio/Purok</option>
+                        <option value="Sitio 1">Sitio 1</option>
+                        <option value="Sitio 2">Sitio 2</option>
+                        <option value="Sitio 3">Sitio 3</option>
+                        <!-- Add more Sitios/Puroks as needed -->
+                    </select>
                 </div>
                 <div class="input-box">
                     <span class = "details">Interviewer</span>
