@@ -3,13 +3,13 @@ html, body {
   height: 100%;
   overflow: hidden;
   min-height: 100vh;
-  display: flex; /* Makes body behave as flex container */
-  justify-content: flex-end; /* Aligns image container to top right */
-  align-items: flex-start; /* Aligns image container to top */
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: flex-start; 
 }
 
 .container {
-  background-color: #005ACD;
+  background-color: #0093CB;
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -21,26 +21,25 @@ html, body {
   right: 0;
   display: flex;
   justify-content: space-between;
-  /* Increase container width to create more space */
-  width: 450px;  /* Adjust width as needed */
-  margin: 50px 55px;  /* Adjust values for horizontal and vertical space */
+  width: 450px;  
+  margin: 50px 55px;  
 }
 
 .image-container img {
-  flex: 0 0 auto; /* Prevents images from shrinking below content size */
-  margin: -20px; /* Adjust margin between images (optional) */
-  width: 100px; /* Adjust image width */
-  height: 100px; /* Adjust image height */
+  flex: 0 0 auto; 
+  margin: -20px; 
+  width: 100px; 
+  height: 100px; 
 }
 
 .text-overlay {
-  position: absolute;  /* Overlaps the images */
-  top: 50%;  /* Positions vertically in the middle */
-  left: 50%;  /* Positions horizontally in the middle */
-  transform: translate(-50%, -50%); /* Adjusts positioning for different text sizes */
-  color: white;  /* Example text color (adjust for contrast with image) */
-  font-size: 50px;  /* Adjust font size */
-  text-align: center;  /* Centers text horizontally */
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  color: white;  
+  font-size: 50px;  
+  text-align: center;  
 }
 
 .img-logo {
@@ -53,7 +52,7 @@ html, body {
 .form-container {
   flex: 1;
   padding: 20px;
-  background-color: #005ACD;
+  background-color: #0093CB;
   align-self: center;
 }
 
@@ -70,16 +69,14 @@ form {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #005ACD;
-  justify-content: center; /* Centers elements vertically within the form */
-
+  background-color: #0093CB;
+  justify-content: center; 
 }
 
 
 label {
   font-weight: bold;
   color: white;
-  /* Add margin-right for spacing */
   margin-right: 10px; 
 }
 
@@ -94,39 +91,35 @@ input[type="password"] {
   padding-left: 30px; 
 }
 
-/* input[type="password"] {
-  width: 174px;
-} */
+
 
 .textbox-container {
   display: flex;
-  align-items: center; /* Aligns label and textbox vertically */
-  margin-bottom: 10px; /* Add spacing between containers */
-  margin-left: 50px;
+  align-items: center; 
+  margin-bottom: 10px; 
 }
 
 
-
 .textbox-icon {
-  margin-right: 10px; /* Space between image and textbox */
-  width: 50px; /* Adjust image width as needed */
-  height: 50px; /* Adjust image height as needed */
+  margin-right: 10px; 
+  width: 50px; 
+  height: 50px; 
 }
 
 button {
   margin: 0 auto;
-  background-color: darkblue;
+  background-color: #006494;
   color: white;
-  padding: 10px 20px; /* Adjust padding if needed */
+  padding: 10px 20px; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 120px;  /* Set a specific width */
-  max-width: 80%; /* Maximum width as a percentage */
-  justify-content: center; /* Centers elements vertically within the form */
+  width: 120px;  
+  max-width: 80%; 
+  justify-content: center; 
 }
 
 button:hover {
-  background-color: #0d6efd;
+  background-color: #66B9E1;
 }
 

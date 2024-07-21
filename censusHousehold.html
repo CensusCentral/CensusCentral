@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseHold Number</title>
+    <link rel="stylesheet" href="censusHousehold.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "title">Household Number</div>
+        <form action="#">
+            <div class ="houseMemberDetails">
+                <div class="input-box">
+                    <span class = "details">Date</span>
+                    <input type="text" placeholder="Date" required>   
+                </div>
+                <div class="input-box">
+                    <span class = "details">Survey Form No.</span>
+                    <input type="text" placeholder="Enter Form No." required>   
+                </div>
+                <div class="input-box">
+                    <span class = "details">Barangay</span>
+                    <input type="text" placeholder="Enter Barangay" required>   
+                </div>
+                <div class="input-box">
+                    <span class = "details">Sitio / Purok</span>
+                    <input type="text" placeholder="Enter Sitio/Purok" required>   
+                </div>
+                <div class="input-box">
+                    <span class = "details">Interviewer</span>
+                    <input type="text" placeholder="Enter Interviewer Name" required>   
+                </div>
+            </div>
+            <div class="classificationOfArea">
+                <input type ="radio"  name="COF" id="dot-1">
+                <input type ="radio"  name="COF" id="dot-2">
+                <span class="classificationOfArea">Classification of Area</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="COF">Danger Zone</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="COF">Waterways</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Confirm">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
