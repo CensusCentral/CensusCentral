@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Info</title>
+    <link rel="stylesheet" href="FormAstyle.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <header>INFORMATION ON THE HOUSEHOLD</header>
+
+        <form action="#">
+            <div class="form first">
+
+                <div class="head-details">
+
+                    <span class="title">Household Head</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter Last name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter First name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Enter Middle name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Maiden Name</label>
+                            <input type="text" placeholder="Enter Maiden name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" placeholder="Enter Age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="sex" class="details">Sex</label>
+                            <select id="sex" required>
+                                <option value="" disabled selected>Select Sex</option>
+                                <option value="Sitio 1">Male</option>
+                                <option value="Sitio 2">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="civil" class="details">Civil Status</label>
+                            <select id="civil" required>
+                                <option value="" disabled selected>Select Civil Status</option>
+                                <option value="Sitio 1">Single</option>
+                                <option value="Sitio 2">Married</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter Occupation" required>
+                        </div>            
+
+                        <div class="input-field">
+                            <label for="gender" class="details">Gender Identification</label>
+                            <select id="gender" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="member" class="details">Member of vunerable community group</label>
+                            <select id="member" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Place of Work</label>
+                            <input type="text" placeholder="Enter Place of Work">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Present Address</label>
+                            <input type="text" placeholder="Enter Address">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details spouse">
+                    <span class="title">Spouse Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter Last name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter First name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Enter Middle name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Maiden Name</label>
+                            <input type="text" placeholder="Enter Maiden name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" placeholder="Enter Age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="sex" class="details">Sex</label>
+                            <select id="sex" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="gender" class="details">Gender Identification</label>
+                            <select id="gender" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="member" class="details">Member of vunerable community group</label>
+                            <select id="member" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details medical">
+                    <span class="title">Medical History</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="history" class="details">Choose Medical History (if non skip)</label>
+                            <select id="history" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Others</label>
+                            <input type="text" placeholder="Enter Sickness">
+                        </div>
+
+                        <div class="input-field">
+                            <label>If Allergy Please Specify</label>
+                            <input type="text" placeholder="Enter Allergy">
+                        </div>
+
+                      
+                    </div>
+                </div>
+
+                <div class="details house">
+                    <span class="title">Classification of Surveyed Household</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label for="ownertype" class="details">Owner Type</label>
+                            <select id="ownertype" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="household" class="details">Household Size</label>
+                            <select id="household" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Year of Residency</label>
+                            <input type="date" placeholder="Enter Year of Residency" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="ethnicity" class="details">Ethnicity/Province of Origin</label>
+                            <select id="ethnicity" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="double" class="details">Doubled-up HouseHold?</label>
+                            <select id="double" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Place of Origin if Non-Indigenous</label>
+                            <input type="text" placeholder="Enter Place of Origin" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Reason for Establishing residence in the area</label>
+                            <input type="text" placeholder="Enter Reason" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="currentStatus" class="details">Current Tenurial Status(Land)</label>
+                            <select id="currentStatus" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="recipient" class="details">Recipient of Any Government Resettlement Program?</label>
+                            <select id="recipient" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>If yes, Which program?</label>
+                            <input type="text" placeholder="Enter Program">
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+    
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="form third">
+                <header>HOUSING/COMMUNITY CONDITION/STRUCTURE DESCRIPTION</header>
+
+                <div class="details med">
+                    <span class="title">Household Info</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Age of Structure</label>
+                            <input type="number" placeholder="Enter Age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Use of Structure</label>
+                            <input type="text" placeholder="Enter Use" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="housetype" class="details">Type of House/Structure</label>
+                            <select id="housetype" required>
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="Sitio 1">Villa</option>
+                                <option value="Sitio 2">Apartment</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="numberstorey" class="details">Number of Storey</label>
+                            <select id="numberstorey" required>
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="Sitio 1">1 Story</option>
+                                <option value="Sitio 2">2 Story</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Others please specify</label>
+                            <input type="text" placeholder="Enter Storey type" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Est/Flr area(sq mtrs)</label>
+                            <input type="text" placeholder="Enter Est Floor Area" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="toilet" class="details">Type of toilet facility that household use</label>
+                            <select id="toilet" required>
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="Sitio 1">N/A</option>
+                                <option value="Sitio 2">N/A</option>
+                            </select>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label for="electric" class="details">Electricity/Lightning Facilities</label>
+                            <select id="electric" required>
+                                <option value="" disabled selected>Select type</option>
+                                <option value="Sitio 1">N/A</option>
+                                <option value="Sitio 2">N/A</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="water" class="details">Primary Source(s) of Water for domestic use:</label>
+                            <select id="water" required>
+                                <option value="" disabled selected>Select Civil Status</option>
+                                <option value="Sitio 1">N/A</option>
+                                <option value="Sitio 2">N/A</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="garbage" class="details">Garbage Disposal/Management</label>
+                            <select id="garbage" required>
+                                <option value="" disabled selected>Select Civil Status</option>
+                                <option value="Sitio 1">N/A</option>
+                                <option value="Sitio 2">N/A</option>
+                            </select>
+                        </div>            
+
+                        <div class="input-field">
+                            <label for="mode" class="details">Mode of House/Structure Acquisition</label>
+                            <select id="mode" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">N/A</option>
+                                <option value="Sitio 2">N/A</option>
+                                <option value="Sitio 3">N/A</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="member" class="details">Relationship with the Lot Owner</label>
+                            <select id="member" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Lot Owner</option>
+                                <option value="Sitio 2">Child</option>
+                                <option value="Sitio 3">Parent</option>
+                                <option value="Sitio 3">Relative</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="member" class="details">Type of Structure</label>
+                            <select id="member" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Residential</option>
+                                <option value="Sitio 2">Commercial</option>
+                                <option value="Sitio 3">Appartment</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+    
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form fourth">
+                <header>GENERAL INFORMATION ON THE HOUSEHOLD</header>
+
+                <div class="details member">
+
+                    <span class="title">Name of Household Member</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter Last name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter First name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Enter Middle name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Maiden Name</label>
+                            <input type="text" placeholder="Enter Maiden name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" placeholder="Enter Age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="sex" class="details">Sex</label>
+                            <select id="sex" required>
+                                <option value="" disabled selected>Choose Sex</option>
+                                <option value="Sitio 1">Male</option>
+                                <option value="Sitio 2">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="civil" class="details">Civil Status</label>
+                            <select id="civil" required>
+                                <option value="" disabled selected>Select Civil Status</option>
+                                <option value="Sitio 1">Single</option>
+                                <option value="Sitio 2">Married</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter Occupation" required>
+                        </div>  
+
+                        <div class="input-field">
+                            <label>Relation to Household head</label>
+                            <input type="text" placeholder="Enter relation" required>
+                        </div>  
+
+                        <div class="input-field">
+                            <label>Place of Work</label>
+                            <input type="text" placeholder="Enter Place of Work">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="gender" class="details">Gender Identification</label>
+                            <select id="gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Sitio 1">Male</option>
+                                <option value="Sitio 2">Female</option>
+                                <option value="Sitio 3">Gay</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="member" class="details">Member of vunerable community group</label>
+                            <select id="member" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>                    
+                    </div>
+                </div>
+
+                <div class="details education">
+                    <span class="title">Educational Background</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Elementary School</label>
+                            <input type="text" placeholder="Enter Elem School">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date Graduated</label>
+                            <input type="date" placeholder="Enter Date">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Secondary School</label>
+                            <input type="text" placeholder="Enter School">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Place of Work</label>
+                            <input type="date" placeholder="Enter Date">
+                        </div>
+
+                      
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="backBtn">
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Back</span>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>  
+
+            <div class="form fifth">
+                <header>GENERAL INFORMATION ON THE HOUSEHOLD</header>
+
+                <div class="details member">
+
+                    <span class="title">Name of Household Member</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter Last name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter First name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Enter Middle name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Maiden Name</label>
+                            <input type="text" placeholder="Enter Maiden name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" placeholder="Enter Age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="sex" class="details">Sex</label>
+                            <select id="sex" required>
+                                <option value="" disabled selected>Choose Sex</option>
+                                <option value="Sitio 1">Male</option>
+                                <option value="Sitio 2">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="civil" class="details">Civil Status</label>
+                            <select id="civil" required>
+                                <option value="" disabled selected>Select Civil Status</option>
+                                <option value="Sitio 1">Single</option>
+                                <option value="Sitio 2">Married</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter Occupation" required>
+                        </div>  
+
+                        <div class="input-field">
+                            <label>Relation to Household head</label>
+                            <input type="text" placeholder="Enter relation" required>
+                        </div>  
+
+                        <div class="input-field">
+                            <label>Place of Work</label>
+                            <input type="text" placeholder="Enter Place of Work">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="gender" class="details">Gender Identification</label>
+                            <select id="gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Sitio 1">Male</option>
+                                <option value="Sitio 2">Female</option>
+                                <option value="Sitio 3">Gay</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="member" class="details">Member of vunerable community group</label>
+                            <select id="member" required>
+                                <option value="" disabled selected>Select Sitio/Purok</option>
+                                <option value="Sitio 1">Sitio 1</option>
+                                <option value="Sitio 2">Sitio 2</option>
+                                <option value="Sitio 3">Sitio 3</option>
+                            </select>
+                        </div>  
+                        
+                        <div class="input-field">
+                            <label>Estimated Monthly Income</label>
+                            <input type="text" placeholder="Enter Estimated Income">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <div class="backBtn">
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Back</span>
+                    </div>
+
+                    <button type="submit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>  
+
+        </form>
+    </div>
+
+
+    <script src = "scriptHead.js"></script>
+</body>
+</html>
