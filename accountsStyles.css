@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: white;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.side-bar {
+  background: #ffffff;
+  width: 250px;
+  left: -100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* for header nav */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0093CB;
+  box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
+  padding: 0 1rem;
+  z-index: var(--z-fixed);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  justify-content: space-between;
+}
+
+.header__img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.header__toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.show-menu{
+  left: 0;
+}
+
+header {
+  background: #a8a8a8;
+}
+
+header img {
+  width: 100px;
+  margin: 15px;
+  margin-left: 70px;
+  border-radius: 50%;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.menu {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu .item a {
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.item i {
+  margin-right: 15px;
+  color: #0093CB;
+}
+
+.item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.item .sub-menu {
+  background: #89CFF0;
+  display: none;
+}
+
+.menu-btn {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  cursor: pointer;
+  margin: 25px;
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.item .sub-menu a {
+  padding-left: 80px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+
+@media screen and (min-width: 768px){
+  body {
+      padding: 1rem 3rem 0 6rem;
+    }
+    .header {
+      padding: 0 3rem 0 6rem;
+    }
+    .header__container {
+      height: calc(3.5rem + .5rem);
+    }
+    .header__toggle {
+      display: none;
+    }
+    .header__img {
+      width: 40px;
+      height: 40px; /*di pa nagana*/
+      order: 1;
+    }
+
+    .side-bar {
+      left: 0;
+    }
+
+    /*For the Table*/
+    .main-content {
+      padding: 20px;
+      margin-left: 250px; /* Adjust based on the width of your sidebar */
+      margin-top: 80px; /* Adjust this value if needed to ensure it's below the header */
+      background-color: #ffffff;
+      color: #000000;
+  }
+  
+  .main-content h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+  }
+  
+  .accounts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+  
+.accounts-table th, .accounts-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+  
+.accounts-table th {
+    background-color: #0056b3;
+    color: white;
+}
+  
+.accounts-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+.accounts-table tr:hover {
+    background-color: #ddd;
+}
+
+/* CSS for the table header */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+/* CSS for the "Add Account" button */
+.add-account-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-account-btn:hover {
+  background-color: #0056b3;
+}
+
+/*status indicator*/
+.status-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  /* Default to inactive */
+  background-color: gray;
+}
+
+.status-indicator.active {
+  background-color: green;
+}
+
+.status-indicator.inactive {
+  background-color: gray;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px; 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 400px; 
+}
+
+/* The Close Button */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.modal form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.modal form input {
+  color: #333;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal form button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+}
+
+.modal form button.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.accounts-table .status-dropdown {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.accounts-table .toggle-password,
+.accounts-table .edit-btn,
+.accounts-table .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+}
+
+.accounts-table .toggle-password {
+  color: #007BFF;
+}
+
+.accounts-table .toggle-password:hover {
+  text-decoration: underline;
+}
+
+.accounts-table .edit-btn i,
+.accounts-table .delete-btn i {
+  font-size: 16px;
+  color: #333;
+}
+
+.accounts-table .edit-btn:hover i,
+.accounts-table .delete-btn:hover i {
+  color: #007BFF;
+}
+
+/*password css*/
+/* Add these styles to accountsStyles.css if not already present */
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: calc(100% - 40px);
+}
+
+.password-container .toggle-password-visibility {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.password-container .toggle-password-visibility i {
+  color: #333;
+}
+
+}
