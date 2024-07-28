@@ -61,12 +61,31 @@
             </div>
             <div class="button-group">
                 <div class="button">
-                    <input type="submit" value="Confirm">
-                </div>
-                <div class="button">
                     <input type="button" value="Cancel">
                 </div>
+                <div class="button">
+                    <input type="button" value="Confirm" id="confirmButton">
+                </div>
             </div>
+
+            <script>
+                document.getElementById('confirmButton').addEventListener('click', function() {
+                    // Get form values
+                    const date = document.getElementById('date').value;
+                    const formNo = document.getElementById('formNo').value;
+                    const barangay = document.getElementById('barangay').value;
+                    const sitioPurok = document.getElementById('sitio_purok').value;
+                    const interviewer = document.getElementById('interviewer').value;
+                    const COF = document.querySelector('input[name="COF"]:checked');
+
+                    // Check if all fields are filled
+                    if (date && formNo && barangay && sitioPurok && interviewer && COF) {
+                        window.location.href = 'FormA.html';
+                    } else {
+                        alert('Please fill in all fields.');
+                    }
+                });
+            </script>
         </form>
     </div>
 </body>
