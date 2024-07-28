@@ -12,14 +12,8 @@
         <form action="#">
             <div class ="houseMemberDetails">
                 <div class="input-box">
-                    <label for="date" class="details">Date</label>
-                    <select id="date" required>
-                        <option value="" disabled selected>Select Date</option>
-                        <option value="2024-07-01">2024-07-01</option>
-                        <option value="2024-07-02">2024-07-02</option>
-                        <option value="2024-07-03">2024-07-03</option>
-                        <!-- Add more dates as needed -->
-                    </select>
+                    <span class = "details">Date</span>
+                    <input type="date" placeholder="Choose Date" required>   
                 </div>
                 <div class="input-box">
                     <span class="details">Survey Form No.</span>
@@ -65,8 +59,13 @@
                     </label>
                 </div>
             </div>
-            <div class="button">
-                <input type="submit" value="Confirm">
+            <div class="button-group">
+                <div class="button">
+                    <input type="submit" value="Confirm">
+                </div>
+                <div class="button">
+                    <input type="button" value="Cancel">
+                </div>
             </div>
         </form>
     </div>

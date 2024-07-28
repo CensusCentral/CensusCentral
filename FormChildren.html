@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseHold Number</title>
+    <link rel="stylesheet" href="FormNumberHold.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "title">Household Member Children</div>
+        <form action="#">
+            <div class ="houseMemberDetails">
+                <div class="input-box">
+                    <span class = "details">Name</span>
+                    <input type="text" placeholder="Enter Name" required>   
+                </div>
+                <div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="number" placeholder="Enter Age" required>
+                </div>
+                <div class="input-box">
+                    <label for="SchoolLevel" class="details">School level</label>
+                    <select id="SchoolLevel" required>
+                        <option value="" disabled selected>Select School level</option>
+                        <option value="Elementary School">Elementary School</option>
+                        <option value="High School">High School</option>
+                        <option value="Middle school">Middle school</option>
+                        <option value="Secondary education">Secondary education</option>
+                        <option value="Tertiary education">Tertiary education</option>
+                        <option value="Preschool">Preschool</option>
+                        <option value="First grade">First grade</option>
+                        <option value="Primary education">Primary education</option>
+                        <option value="Universities">Universities</option>
+                        <option value="Vocational education">Vocational education</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class = "details">School Name</span>
+                    <input type="text" placeholder="Enter Name" required>   
+                </div>
+                <div class="input-box">
+                    <span class = "details">School Year Started</span>
+                    <input type="date" placeholder="Choose Date" required>   
+                </div>
+                <div class="input-box">
+                    <span class = "details">Year Graduated/Stopped</span>
+                    <input type="date" placeholder="Choose Date" required>   
+                </div>
+            </div>
+           
+            <div class="button-group">
+                <div class="button">
+                    <input type="submit" value="Confirm">
+                </div>
+                <div class="button">
+                    <input type="button" value="Cancel">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
